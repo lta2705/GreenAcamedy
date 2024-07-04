@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="to-do-app col-md-8 bg-light text-center p-5">
+          <div class="heading">
+            <h2 class="text-primary">TO-DO LIST</h2>
+          </div>
+          <div class="form d-flex justify-content-center p-5">
+            <form class="d-flex w-100 justify-content-between" onsubmit="event.preventDefault(); addTask();">
+              <input type="text" id="input-box" placeholder="Add your task" class="form-control me-2" style="border-radius: 25px; height: 7vh">
+              <button type="submit" class="btn btn-primary" style="border-radius: 25px; width:100px">Add</button>
+            </form>
+          </div>
+          <div class="list">
+            <ul class="list-unstyled p-4" id="list-container">
+              <!-- Tasks will be added here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/65627db25e.js" crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
